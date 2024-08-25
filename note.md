@@ -16,3 +16,5 @@ git commit -m "第一次commit"    //建立備份
 
 git log //檢視過往快照，按下"q"退出
 git log --oneline
+
+git diff    //在執行 git commit 之前，確認進行了那些變更
