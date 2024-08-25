@@ -18,3 +18,7 @@ git log //檢視過往快照，按下"q"退出
 git log --oneline
 
 git diff    //在執行 git commit 之前，確認進行了那些變更
+git diff commit   //當前分支與不同分支進行比較，git log 獲得commit
+git diff commit1 commit2    //兩分支進行比較，commit1較舊
+git diff af3f194 -- note.md //指定檔案看commit(af3f194)前後之差異
+
