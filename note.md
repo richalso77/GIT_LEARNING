@@ -8,7 +8,11 @@ git init    //初始化，建置.git
 git add note.md //將note.md加入追蹤
 git add note.md note1.md
 git add *.*
+git add .
 
 git status  //查看狀態
 
 git commit -m "第一次commit"    //建立備份
+
+git log //檢視過往快照，按下"q"退出
+git log --oneline
