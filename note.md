@@ -22,3 +22,6 @@ git diff commit   //當前分支與不同分支進行比較，git log 獲得comm
 git diff commit1 commit2    //兩分支進行比較，commit1較舊
 git diff af3f194 -- note.md //指定檔案看commit(af3f194)前後之差異
 
+git checkout commit -- temp.md  //修改temp.md，至commit快照
+git reset --hard commit //注意！相較於前者，他不會留下更改紀錄，前者像是修改成過去某版
+                        //後者是回到過去，所以會損失原本回到過去的版本更改紀錄
