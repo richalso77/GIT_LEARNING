@@ -25,3 +25,12 @@ git diff af3f194 -- note.md //指定檔案看commit(af3f194)前後之差異
 git checkout commit -- temp.md  //修改temp.md，至commit快照
 git reset --hard commit //注意！相較於前者，他不會留下更改紀錄，前者像是修改成過去某版
                         //後者是回到過去，所以會損失原本回到過去的版本更改紀錄
+
+
+//刪除檔案依然需要git add，因為git是追蹤變化，而不是關注檔案本身
+
+//.gitignore同樣需要git add
+
+git remote add origin https://github.com/richalso77/GIT_LEARNING.git    //聯接github
+git branch -M main
+git push -u origin main
